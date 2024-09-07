@@ -368,14 +368,14 @@ void lockpick()
   }
   else
   {
-   control = 1;
+   control = -1;
    key = "passed";
   }
 }
 
 int main() 
 { 
-  lockpick()
+  lockpick();
   menu();
   return 0;
 }
