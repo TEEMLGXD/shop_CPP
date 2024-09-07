@@ -4,9 +4,9 @@ using namespace std;
 const int maxstock = 10;
 int menuop = 0,stockmenu = 0,control = 0;
 
-string stock[maxstock];
-int amount_stock[maxstock],price_stock[maxstock],sold_stock[maxstock],re_stock[maxstock],income_stock[maxstock];
-int income = 0;
+//string stock[maxstock];
+//int amount_stock[maxstock],price_stock[maxstock],sold_stock[maxstock],re_stock[maxstock],income_stock[maxstock];
+//int income = 0;
 
 void showstock()
 {
@@ -18,7 +18,7 @@ void showstock()
   cout << "--------------------------" << endl;
 }
 
-void option_select()
+void option_select(//)
 {
   cout << "-------------------------------" << endl;
   cout << "Please select an option : ";
