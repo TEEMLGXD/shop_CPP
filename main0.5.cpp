@@ -4,9 +4,9 @@ using namespace std;
 const int maxstock = 10;
 int menuop = 0,stockmenu = 0,control = 0;
 
-//string stock[maxstock];
-//int amount_stock[maxstock],price_stock[maxstock],sold_stock[maxstock],re_stock[maxstock],income_stock[maxstock];
-//int income = 0;
+string stock[maxstock];
+int amount_stock[maxstock],price_stock[maxstock],sold_stock[maxstock],re_stock[maxstock],income_stock[maxstock];
+int income = 0;
 
 void showstock()
 {
@@ -18,7 +18,7 @@ void showstock()
   cout << "--------------------------" << endl;
 }
 
-void option_select(//)
+void option_select()
 {
   cout << "-------------------------------" << endl;
   cout << "Please select an option : ";
@@ -356,8 +356,27 @@ void menu()
   
 }
 
+void lockpick()
+{
+  string key = "password.json";
+
+  if(key != "seted_key.json")
+  {
+   control = 0;
+   menuop = 99;
+   stockmenu = 99;
+  }
+  else
+  {
+   control = 1;
+   key = "passed";
+  }
+}
+
 int main() 
 { 
+  lockpick()
   menu();
   return 0;
 }
+  
