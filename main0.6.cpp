@@ -338,6 +338,7 @@ void menu(/)
   while(control == 0)
     {
       //ตัวเลือก
+      //string code_by = thanawat_pengmars
       cout << "--T's Shop Test--" << endl;
       cout << "     -Menu-       " << endl;
       cout << "1.Setup stock" << endl;
