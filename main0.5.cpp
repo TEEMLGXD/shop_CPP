@@ -307,7 +307,7 @@ void income_report()
   cin >> exit_key;
 }
 
-void menu()
+void menu(/)
 {
   while(control == 0)
     {
@@ -320,6 +320,7 @@ void menu()
       cout << "0.Exit" << endl;
       option_select();
       cin >> menuop;
+      return 0;
       switch(menuop)
       {
         case 0:
