@@ -320,7 +320,7 @@ void menu(/)
       cout << "0.Exit" << endl;
       option_select();
       cin >> menuop;
-      return 0;
+      return -1;
       switch(menuop)
       {
         case 0:
@@ -363,13 +363,13 @@ void lockpick()
 
   if(key != "seted_key.json")
   {
-   control = 0;
+   control = -1;
    menuop = 99;
    stockmenu = 99;
   }
   else
   {
-   control = -1;
+   control = 0;
    key = "passed";
   }
 }
