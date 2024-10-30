@@ -307,33 +307,13 @@ void income_report()
   cin >> exit_key;
 }
 
-
-
-void lockpick()
-{
-  string key = "password.json";
-
-  if(key != "seted_key.json")
-  {
-   control = -1;
-   menuop = 99;
-   stockmenu = 99;
-  }
-  else
-  {
-   control = 0;
-   key = "passed";
-  }
-}
-
 int main() 
 { 
-  lockpick();
   menu();
   return 0;
 }
 
-void menu(/)
+void menu()
 {
   while(control == 0)
     {
